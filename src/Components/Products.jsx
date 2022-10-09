@@ -5,7 +5,7 @@ import { fetchProducts, STATUSES } from '../Redux/productSlice';
 
 const Products = () => {
     const dispatch = useDispatch();
-    const { data: products, status } = useSelector((state) => state.product);
+    const { data: products, status } = useSelector((state) => state.products);
 
     useEffect(() => {
         dispatch(fetchProducts());
