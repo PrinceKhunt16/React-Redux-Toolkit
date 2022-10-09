@@ -32,4 +32,6 @@ const productSlice = createSlice({
 });
 
 export const { setProducts, setStatus } = productSlice.actions;
+export const getProducts = (state) => state.products.data;
+export const getStatus = (state) => state.products.status;
 export default productSlice.reducer;
